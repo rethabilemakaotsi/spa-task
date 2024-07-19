@@ -4,13 +4,15 @@ import axios from "axios";
 
 const store = createStore({
   state: {
-    
-      currencies: [],
-    
+    currencies: [],
+    bookings: [],
   },
   mutations: {
     setCurrencies(state, data) {
       state.currencies = data;
+    },
+    setBookings(state, value) {
+      state.bookings = value;
     },
   },
   actions: {
